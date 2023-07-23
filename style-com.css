@@ -1,0 +1,43 @@
+.comunication__wrap {
+  text-align: center;
+  margin: 85px 0 0 0;
+  display: flex;
+  padding: 130px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #7fb9fd1a;
+}
+.comunication_p {
+  color: #6a6a6a;
+  font-size: 25px;
+}
+@media (max-width: 900px) {
+  .comunication__h {
+    font-size: 30px;
+  }
+}
+.comunication_img-wrap {
+  margin: 24px 0;
+}
+.comunication__h {
+  font-size: 40px;
+  color: #ee2128;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .comunication__btn-wrap {
+    width: 250px;
+  }
+}
+.comunication__btn-wrap {
+  width: 300px;
+  border: 1px solid #92bafdbd;
+  background-color: white;
+}
+
+.comunication_img-wrap {
+  margin: 24px 0;
+}

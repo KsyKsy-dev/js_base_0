@@ -1,8 +1,12 @@
 "use strict";
 
-// expresion
-let ask= function(q,y,n){
-    if((confirm(q)) y();
-    else n();
+//Object's method 
+let user={
+    name:"Ziro",
+
 }
-ask('agree?', function(){console.log("y");}, function(){console.log(n);})
+user.say=function{
+    console.log('sey'+user.name)};
+
+}
+user.say();
