@@ -1,12 +1,10 @@
 "use strict";
 
-//Object's method 
-let user={
-    name:"Ziro",
+//Object's method pre declared
 
+let user = {};
+function sey() {
+  console.log("Say hi!");
 }
-user.say=function{
-    console.log('sey'+user.name)};
-
-}
-user.say();
+user.sey = sey;
+user.sey();
