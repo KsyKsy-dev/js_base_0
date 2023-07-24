@@ -18,11 +18,31 @@
 // user.say();
 
 //this function
-let arr = { name: "arr" };
-let arr1 = { name: "arr1" };
+// let arr = { name: "arr" };
+// let arr1 = { name: "arr1" };
 
-function testThis(name) {
-  console.log(name);
-}
-arr.f = testThis;
-arr.f(this.name);
+// function testThis() {
+//   console.log(this.name);
+// }
+// arr.f = testThis;
+// arr1.f = testThis;
+// arr.f(this.name);
+// arr1.f(this.name);
+
+//calcultor objects  method
+
+let calc = {
+  a: 10,
+  b: 2,
+
+  read() {
+    console.log(this.a, this.b);
+  },
+  add() {
+    return this.a + this.b;
+  },
+  mult() {
+    return a * b;
+  },
+};
+console.log(calc.add());
