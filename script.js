@@ -45,18 +45,13 @@
 // console.log(calc.add());
 
 // leadder
-let leadder = {
+let leader = {
   step: 0,
   up() {
     this.step++;
-    console.log(this);
-  },
-  down() {
-    this.step--;
-    console.log(this);
-  },
-  show() {
     console.log(this.step);
+    console.log(leader);
+    return leader;
   },
 };
-leadder.up().up();
+leader.up().up();
