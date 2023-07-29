@@ -31,18 +31,32 @@
 
 //calcultor objects  method
 
-let calc = {
-  a: 10,
-  b: 2,
+// let calc = {
+//   read() {
+//     (this.a = 10), (this.b = 2);
+//   },
+//   add() {
+//     return this.a + this.b;
+//   },
+//   mult() {
+//     return a * b;
+//   },
+// };
+// console.log(calc.add());
 
-  read() {
-    console.log(this.a, this.b);
+// leadder
+let leadder = {
+  step: 0,
+  up() {
+    this.step++;
+    console.log(this);
   },
-  add() {
-    return this.a + this.b;
+  down() {
+    this.step--;
+    console.log(this);
   },
-  mult() {
-    return a * b;
+  show() {
+    console.log(this.step);
   },
 };
-console.log(calc.add());
+leadder.up().up();
