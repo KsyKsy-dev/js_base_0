@@ -57,11 +57,18 @@
 // console.log(leader.up().up());
 // console.log(leader.up);
 
-//NEW functions
+//NEW functions new and without new
 
-function User() {
-  console.log(new.target);
+// function User() {
+//   console.log(new.target);
+// }
+
+// new User();
+// User();
+
+// return in constructors
+function User(name) {
+  this.name = name;
+  return { name: "Big" };
 }
-
-new User();
-User();
+console.log(new User(name));
