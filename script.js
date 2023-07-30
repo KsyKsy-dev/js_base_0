@@ -67,8 +67,16 @@
 // User();
 
 // return in constructors
-function User(name) {
-  this.name = name;
-  return { name: "Big" };
-}
-console.log(new User(name));
+// function User(name) {
+//   this.name = name;
+//   return { name: "Big" };
+// }
+// console.log(new User(name));
+
+// return in constractors are returning this
+
+// function User(name) {
+//   this.name = "Chichi";
+//   return;
+// }
+// console.log(new User().name);
