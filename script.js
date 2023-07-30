@@ -45,13 +45,23 @@
 // console.log(calc.add());
 
 // leadder
-let leader = {
-  step: 0,
-  up() {
-    this.step++;
-    console.log(this.step);
-    console.log(leader);
-    return leader;
-  },
-};
-leader.up().up();
+// let leader = {
+//   step: 0,
+//   up() {
+//     leader.step++;
+//     console.log(leader.step);
+//     console.log(leader.up);
+//     return this;
+//   },
+// };
+// console.log(leader.up().up());
+// console.log(leader.up);
+
+//NEW functions
+
+function User() {
+  console.log(new.target);
+}
+
+new User();
+User();
