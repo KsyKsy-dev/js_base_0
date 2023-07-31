@@ -80,3 +80,38 @@
 //   return;
 // }
 // console.log(new User().name);
+
+//methods in constractors
+// function User(name) {
+//   this.name = name;
+//   this.speak = function () {
+//     console.log("may name is " + this.name);
+//   };
+// }
+// let baby = new User("baby");
+// baby.speak();
+
+// // comipire two constrators
+// let o = {};
+// function A() {
+//   return o;
+// }
+// function B() {
+//   return o;
+// }
+
+// console.log(new A() === new B());
+
+//constractor calculator
+
+function Calc(a, b) {
+  this.a = a;
+  this.b = b;
+  this.sum = function () {
+    return this.a + this.b;
+  };
+  this.sub = function () {
+    return this.a - this.b;
+  };
+}
+console.log(new Calc(2, 1).sub());
