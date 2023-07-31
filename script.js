@@ -104,14 +104,28 @@
 
 //constractor calculator
 
-function Calc(a, b) {
-  this.a = a;
-  this.b = b;
-  this.sum = function () {
-    return this.a + this.b;
-  };
-  this.sub = function () {
-    return this.a - this.b;
-  };
-}
-console.log(new Calc(2, 1).sub());
+// function Calc(a, b) {
+//   this.a = a;
+//   this.b = b;
+//   this.sum = function () {
+//     return this.a + this.b;
+//   };
+//   this.sub = function () {
+//     return this.a - this.b;
+//   };
+// }
+// console.log(new Calc(2, 1).sub());
+
+// constraxtor accomulator
+
+// function Acomulator() {
+//   this.value = 0;
+//   this.add = function () {
+//     this.value += +prompt("0", 0);
+//   };
+// }
+// let accomulator = new Acomulator();
+// accomulator.add();
+// accomulator.add();
+
+// console.log(accomulator.value);
