@@ -129,3 +129,8 @@
 // accomulator.add();
 
 // console.log(accomulator.value);
+
+// optional chaining
+
+let user = {};
+console.log(user.name);
