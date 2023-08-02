@@ -137,10 +137,22 @@
 
 // let html = document.querySelector("div");
 // console.log(html.innerHTML);
-let key = "firsrname";
+// optional chining functiins
+
+let f = {
+  m() {
+    console.log(1);
+  },
+};
+let f1 = {};
+f.m?.();
+f1.m?.();
+
+// optional chining objects square brackets
+let key = "firstname";
 let user = {
-  firstnameg: "j",
+  firstname: "j",
 };
 let user2 = {};
 
-console.log(user?.[name], user2?.[key]);
+console.log(user?.[key], user2?.[key]);
