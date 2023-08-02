@@ -132,5 +132,15 @@
 
 // optional chaining
 
-let user = {};
-console.log(user.name);
+// let user = {};
+// console.log(user.name ? user.name.adress : undefined);
+
+// let html = document.querySelector("div");
+// console.log(html.innerHTML);
+let key = "firsrname";
+let user = {
+  firstnameg: "j",
+};
+let user2 = {};
+
+console.log(user?.[name], user2?.[key]);
