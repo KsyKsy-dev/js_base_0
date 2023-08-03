@@ -139,20 +139,28 @@
 // console.log(html.innerHTML);
 // optional chining functiins
 
-let f = {
-  m() {
-    console.log(1);
-  },
-};
-let f1 = {};
-f.m?.();
-f1.m?.();
+// let f = {
+//   m() {
+//     console.log(1);
+//   },
+// };
+// let f1 = {};
+// f.m?.();
+// f1.m?.();
 
-// optional chining objects square brackets
-let key = "firstname";
+// // optional chining objects square brackets
+// let key = "firstname";
+// let user = {
+//   firstname: "j",
+// };
+// let user2 = {};
+
+// console.log(user?.[key], user2?.[key]);
+
+// Symbols
+
 let user = {
-  firstname: "j",
+  name: "John",
 };
-let user2 = {};
-
-console.log(user?.[key], user2?.[key]);
+let id = Symbol("id");
+console.log(user[id]);
