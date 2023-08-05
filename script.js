@@ -164,3 +164,4 @@ let user = {
 };
 let id = Symbol("id");
 console.log(user[id]);
+console.log(id.toString());
