@@ -172,11 +172,12 @@
 // symbol on the object has to be wrapped in square brackets
 let id = Symbol("id");
 let user = {
-  1: "2",
+  1: "0",
   u: 3,
   [id]: 123,
 };
+let i = 1;
 console.log(user[id]);
 for (let key in user) {
-  console.log(user[key], user[id]);
+  console.log("sircle " + i++, user[key], user[id], user);
 }
