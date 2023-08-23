@@ -159,10 +159,12 @@
 
 // Symbols
 
-// let user = {
-//   name: "John",
-// };
-// let id = Symbol("id");
-// console.log(user[id]);
-// console.log(id.toString());
-// console.log(id.description);
+let user = {
+  name: "John",
+};
+let id = Symbol("id");
+console.log(typeof id);
+console.log(id);
+console.log(user[id]);
+console.log(id.toString());
+console.log(id.description);
