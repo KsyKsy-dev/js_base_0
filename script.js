@@ -159,12 +159,24 @@
 
 // Symbols
 
-let user = {
-  name: "John",
-};
+// let user = {
+//   name: "John",
+// };
+// let id = Symbol("id");
+// console.log(typeof id);
+// console.log(id);
+// console.log(user[id]);
+// console.log(id.toString());
+// console.log(id.description);
+
+// symbol on the object has to be wrapped in square brackets
 let id = Symbol("id");
-console.log(typeof id);
-console.log(id);
+let user = {
+  1: "2",
+  u: 3,
+  [id]: 123,
+};
 console.log(user[id]);
-console.log(id.toString());
-console.log(id.description);
+for (let key in user) {
+  console.log(user[key], user[id]);
+}
