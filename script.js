@@ -197,7 +197,10 @@
 
 // global symbul regidtry
 
-// let id = Symbol.for("id");
+let id = Symbol.for("id");
 
-// let id2 = Symbol.for("id");
-// console.log(id === id2);
+let id2 = Symbol.for("id");
+console.log(id === id2);
+
+//Symbol keyFor(key) returns a symbol name
+console.log(Symbol.keyFor(id));
