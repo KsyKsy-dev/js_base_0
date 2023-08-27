@@ -170,14 +170,34 @@
 // console.log(id.description);
 
 // symbol on the object has to be wrapped in square brackets
-let id = Symbol("id");
-let user = {
-  1: "0",
-  u: 3,
-  [id]: 123,
-};
-let i = 1;
-console.log(user[id]);
-for (let key in user) {
-  console.log("sircle " + i++, user[key], user[id], user);
-}
+// let id = Symbol("id");
+// let user = {
+//   1: "0",
+//   u: 3,
+//   [id]: 123,
+// };
+// let i = 1;
+// console.log(user[id]);
+// for (let key in user) {
+//   console.log("sircle " + i++, user[key], user[id], user);
+// }
+
+// cloning Symbul added to object
+
+// let id = Symbol("check");
+
+// let user = {
+//   iq: 0,
+//   state: "-",
+//   [id]: "no info",
+// };
+// let clone = Object.assign({}, user);
+
+// console.log(clone[id]);
+
+// global symbul regidtry
+
+// let id = Symbol.for("id");
+
+// let id2 = Symbol.for("id");
+// console.log(id === id2);
