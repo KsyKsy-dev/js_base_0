@@ -197,10 +197,21 @@
 
 // global symbul regidtry
 
-let id = Symbol.for("id");
+// let id = Symbol.for("id");
 
-let id2 = Symbol.for("id");
-console.log(id === id2);
+// let id2 = Symbol.for("id");
+// console.log(id === id2);
 
 //Symbol keyFor(key) returns a symbol name
-console.log(Symbol.keyFor(id));
+// console.log(Symbol.keyFor(id));
+
+// object to primitive
+
+let ob = { a: 1, b: 2 };
+let ob0 = { a: 2, b: 3 };
+console.log(ob + ob0);
+console.log(Number(ob));
+console.log(++ob);
+
+console.log(true == ob);
+console.log(ob < ob0);
