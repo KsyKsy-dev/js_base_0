@@ -209,9 +209,11 @@
 
 let ob = { a: 1, b: 2 };
 let ob0 = { a: 2, b: 3 };
+console.log(ob, ob0);
 console.log(ob + ob0);
 console.log(Number(ob));
 console.log(++ob);
 
 console.log(true == ob);
 console.log(ob < ob0);
+console.log(ob, ob0);
