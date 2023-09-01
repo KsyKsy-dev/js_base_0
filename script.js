@@ -229,3 +229,15 @@ let obj = {
 console.log(Number(obj));
 console.log(String(obj));
 //Symbol to primitive method
+
+let objToSmbl = {
+  value: 22,
+  str: "mstr",
+  [Symbol.toPrimitive](hint) {
+    console.log(hint, `{hint}`);
+    return hint == "number" ? `{str:&{this.str}}` : this.value;
+  },
+};
+console.log(Number(objToSmbl));
+console.log(String(objToSmbl));
+console.log(objToSmbl + 1);
