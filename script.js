@@ -219,7 +219,7 @@
 // console.log(ob, ob0);
 
 let obj = {
-  valuOf: function () {
+  valueOf: function () {
     return 23;
   },
   toString: function () {
@@ -228,3 +228,4 @@ let obj = {
 };
 console.log(Number(obj));
 console.log(String(obj));
+//Symbol to primitive method
