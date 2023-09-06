@@ -250,4 +250,4 @@ let obj = {
     return "2";
   },
 };
-console.log(2 * obj);
+console.log(2 + obj);
