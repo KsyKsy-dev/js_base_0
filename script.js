@@ -218,26 +218,36 @@
 // console.log(ob < ob0);
 // console.log(ob, ob0);
 
-let obj = {
-  valueOf: function () {
-    return 23;
-  },
-  toString: function () {
-    return "st";
-  },
-};
-console.log(Number(obj));
-console.log(String(obj));
+// let obj = {
+//   valueOf: function () {
+//     return 23;
+//   },
+//   toString: function () {
+//     return "st";
+//   },
+// };
+// console.log(Number(obj));
+// console.log(String(obj));
 //Symbol to primitive method
 
-let objToSmbl = {
-  value: 22,
-  str: "mstr",
-  [Symbol.toPrimitive](hint) {
-    console.log(hint, `{hint}`);
-    return hint == "number" ? `{str:&{this.str}}` : this.value;
+// let objToSmbl = {
+//   value: 22,
+//   str: "mstr",
+//   [Symbol.toPrimitive](hint) {
+//     console.log(hint, `{hint}`);
+//     return hint == "number" ? `{str:&{this.str}}` : this.value;
+//   },
+// };
+// console.log(Number(objToSmbl));
+// console.log(String(objToSmbl));
+// console.log(objToSmbl + 1);
+
+// let myob = { user: "name" };
+//console.log(myob);
+
+let obj = {
+  toString() {
+    return "2";
   },
 };
-console.log(Number(objToSmbl));
-console.log(String(objToSmbl));
-console.log(objToSmbl + 1);
+console.log(2 * obj);
