@@ -271,7 +271,7 @@ let obj = {
   str: "str",
   [Symbol.toPrimitive](hint) {
     console.log(`hint:${hint}`);
-    return hint == "string" ? `{str":&{this.str}" }` : this.num;
+    return hint == "string" ? `{str:"${this.str}" }` : this.num;
   },
 };
 console.log(Number(obj));
