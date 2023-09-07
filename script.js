@@ -266,3 +266,13 @@
 // };
 
 // console.log(obj - 1);
+let obj = {
+  num: 2,
+  str: "str",
+  [Symbol.toPrimitive](hint) {
+    console.log(`hint:${hint}`);
+    return hint == "string" ? `{str":&{this.str}" }` : this.num;
+  },
+};
+console.log(Number(obj));
+console.log(String(obj));
