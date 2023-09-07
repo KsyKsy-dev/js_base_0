@@ -254,6 +254,15 @@
 
 // explicit type conversion
 
-let num = 42;
-let grit = "sat";
-console.log(num + grit);
+// let num = 42;
+// let grit = "sat";
+// console.log(num + grit);
+
+// object type convertion method typeOf();
+// let obj = {
+//   valueOf() {
+//     return 44;
+//   },
+// };
+
+// console.log(obj - 1);
