@@ -267,11 +267,11 @@
 
 // console.log(obj - 1);
 let obj = {
-  num: 2,
   str: "str",
-  [Symbol.toPrimitive](hint) {
-    console.log(`hint:${hint}`);
-    return hint == "string" ? `{str:"${this.str}" }` : this.num;
+  num: 2,
+  [Symbol.toPrimitive](h) {
+    console.log(`h: ${h}`);
+    return h == "string" ? `str:"${this.str}"` : this.num;
   },
 };
 console.log(Number(obj));
