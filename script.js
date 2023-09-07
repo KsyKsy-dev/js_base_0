@@ -245,9 +245,15 @@
 // let myob = { user: "name" };
 //console.log(myob);
 
-let obj = {
-  toString() {
-    return "2";
-  },
-};
-console.log(2 + obj);
+// let obj = {
+//   toString() {
+//     return "2";
+//   },
+// };
+// console.log(2 + obj);
+
+// explicit type conversion
+
+let num = 42;
+let grit = "sat";
+console.log(num + grit);
