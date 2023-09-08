@@ -266,13 +266,18 @@
 // };
 
 // console.log(obj - 1);
-let obj = {
-  str: "str",
-  num: 2,
-  [Symbol.toPrimitive](h) {
-    console.log(`h: ${h}`);
-    return h == "string" ? `str:"${this.str}"` : this.num;
-  },
-};
-console.log(Number(obj));
-console.log(String(obj));
+// let obj = {
+//   str: "str",
+//   num: 2,
+//   [Symbol.toPrimitive](h) {
+//     console.log(`h: ${h}`);
+//     return h == "string" ? `str:"${this.str}"` : this.num;
+//   },
+// };
+// console.log(Number(obj));
+// console.log(String(obj));
+
+//methods of primitives
+
+let grit = "hey";
+console.log(grit.toUpperCase());
