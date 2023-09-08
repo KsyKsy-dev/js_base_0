@@ -279,5 +279,27 @@
 
 //methods of primitives
 
-let grit = "hey";
-console.log(grit.toUpperCase());
+// let grit = "hey";
+// console.log(grit.toUpperCase());
+
+// let num = 1.234353;
+
+// console.log(num.toFixed(2));
+//using of constartors(strin, numbeer, boolean) isunceromended
+
+let zero = 0;
+let zero1 = new Number(0);
+console.log(typeof 0);
+console.log(typeof zero1);
+
+if (zero) {
+  console.log("zero is falsy");
+} else {
+  console.log("zero number is falsy value ");
+}
+
+if (zero1) {
+  console.log("zero obj is truly");
+} else {
+  console.log("zero obj is falsy");
+}
