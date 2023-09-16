@@ -306,6 +306,8 @@
 
 //object wrappers
 
-let str = "txt";
-str.test = 5;
-console.log(str.test);
+// let str = "txt";
+// str.test = 5;
+// console.log(str.test);
+let n = 9e6;
+console.log(n);
