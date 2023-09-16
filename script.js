@@ -310,4 +310,5 @@
 // str.test = 5;
 // console.log(str.test);
 let n = 9e6;
-console.log(n);
+let nMin = 9e-6;
+console.log(n, nMin);
