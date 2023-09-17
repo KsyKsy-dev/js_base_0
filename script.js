@@ -315,7 +315,13 @@
 
 //imprecise calculation
 
-let n1 = 0.1;
-let n2 = 0.2;
-console.log(n1 + n2 == 0.3);
-console.log(+n1.toFixed(2) + +n2.toFixed(2) == 0.3);
+// let n1 = 0.1;
+// let n2 = 0.2;
+// console.log(n1 + n2 == 0.3);
+// console.log(+n1.toFixed(2) + +n2.toFixed(2) == 0.3);
+
+//test isNaN();
+
+console.log(isNaN(NaN));
+console.log(isNaN("str"));
+console.log(isNaN("123"));
