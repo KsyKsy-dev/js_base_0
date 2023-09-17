@@ -298,7 +298,7 @@
 //   console.log("zero number is falsy value ");
 // }
 
-// if (zero1) {
+// if (zero1) {""
 //   console.log("zero obj is truly");
 // } else {
 //   console.log("zero obj is falsy");
@@ -309,6 +309,13 @@
 // let str = "txt";
 // str.test = 5;
 // console.log(str.test);
-let n = 9e6;
-let nMin = 9e-6;
-console.log(n, nMin);
+// let n = 9e6;
+// let nMin = 9e-6;
+// console.log(n, nMin);
+
+//imprecise calculation
+
+let n1 = 0.1;
+let n2 = 0.2;
+console.log(n1 + n2 == 0.3);
+console.log(+n1.toFixed(2) + +n2.toFixed(2) == 0.3);
