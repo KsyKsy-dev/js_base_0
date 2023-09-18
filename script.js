@@ -334,4 +334,9 @@
 // console.log(isFinite(Infinity));
 
 // Object.is(); method
-console.log(Object.is(5, "5"));
+//console.log(Object.is(5, "5"));
+
+// functins parseInt(), parseFloat()
+
+console.log(parseFloat("1,2em"));
+console.log(parseInt("100px"));
