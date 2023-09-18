@@ -322,6 +322,13 @@
 
 //test isNaN();
 
-console.log(isNaN(NaN));
-console.log(isNaN("str"));
-console.log(isNaN("123"));
+// console.log(isNaN(NaN));
+// console.log(isNaN("str"));
+// console.log(Number.isNaN("123"));
+// console.log(isNaN(2));
+
+// test isFinit(value);
+
+console.log(isFinite(1));
+console.log(isFinite("str"));
+console.log(isFinite(Infinity));
