@@ -329,6 +329,9 @@
 
 // test isFinit(value);
 
-console.log(isFinite(1));
-console.log(isFinite("str"));
-console.log(isFinite(Infinity));
+// console.log(isFinite(1));
+// console.log(isFinite(" ")); // emty string and or space is trited as NaN
+// console.log(isFinite(Infinity));
+
+// Object.is(); method
+console.log(Object.is(5, "5"));
