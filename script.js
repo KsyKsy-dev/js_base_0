@@ -341,3 +341,4 @@
 console.log(parseFloat("1,2em"));
 console.log(parseInt("100px"));
 console.log(parseInt("e33")); //firrst simbul stop procces of reading number
+console.log(Math.random());
