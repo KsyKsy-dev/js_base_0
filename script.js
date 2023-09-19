@@ -344,10 +344,16 @@
 // console.log(Math.random());
 //task get two number from user and get it sum
 
-function add() {
-  let v = prompt("type first number ", "0");
-  let v0 = prompt("type the second number", "0");
-  return +v + +v0;
-}
-add();
-console.log(add);
+// function add() {
+//   let v = prompt("type first number ", "0");
+//   let v0 = prompt("type the second number", "0");
+//   return +v + +v0;
+// }
+
+// console.log(add());
+
+// ROUNDING NUMBER
+
+let n = 6.35;
+console.log(n.toFixed(20));
+console.log(Math.round(6.35 * 10) / 10);
