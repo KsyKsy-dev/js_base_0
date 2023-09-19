@@ -338,7 +338,16 @@
 
 // functins parseInt(), parseFloat()
 
-console.log(parseFloat("1,2em"));
-console.log(parseInt("100px"));
-console.log(parseInt("e33")); //firrst simbul stop procces of reading number
-console.log(Math.random());
+// console.log(parseFloat("1,2em"));
+// console.log(parseInt("100px"));
+// console.log(parseInt("e33")); //firrst simbul stop procces of reading number
+// console.log(Math.random());
+//task get two number from user and get it sum
+
+function add() {
+  let v = prompt("type first number ", "0");
+  let v0 = prompt("type the second number", "0");
+  return +v + +v0;
+}
+add();
+console.log(add);
