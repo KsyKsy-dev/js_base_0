@@ -359,12 +359,29 @@
 // console.log(Math.round(6.35 * 10) / 10);
 
 // repeat untill input is a number
+// 1 prompt
+// 2 check !Number.isFinite()
+//if null or " "break
+//return +num
 
-function checkNumber() {}
-let n = 0;
+// function checkNumber() {
+//   let n;
+//   do {
+//     n = prompt("plese enter valid number", 0);
+//     if (n === null || n === " ") {
+//       return null;
+//     }
+//   } while (!isFinite(n));
+//   return +n;
+// }
 
-do {
-  n = prompt("add number", "0");
-  console.log(n, typeof n);
-} while (typeof n !== "number");
-checkNumber();
+// console.log(`it is valid number: ${checkNumber()}`);
+
+//minmax random number exept max
+
+function random(min, max) {
+  //Math.random()* (max-min)
+  //min + value
+  return min + Math.random() * (max - min);
+}
+console.log(random(1, 3));
