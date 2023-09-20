@@ -354,6 +354,17 @@
 
 // ROUNDING NUMBER
 
-let n = 6.35;
-console.log(n.toFixed(20));
-console.log(Math.round(6.35 * 10) / 10);
+// let n = 6.35;
+// console.log(n.toFixed(20));
+// console.log(Math.round(6.35 * 10) / 10);
+
+// repeat untill input is a number
+
+function checkNumber() {}
+let n = 0;
+
+do {
+  n = +prompt("add number", "0");
+  console.log(n);
+} while (typeof n !== "number");
+checkNumber();
