@@ -433,9 +433,16 @@
 
 // indexOf() star value is 0
 
-let fr = "some dummy text";
-if (fr.indexOf("some") != -1) {
-  console.log("go");
-} else {
-  console.log("arrived");
-}
+// let fr = "some dummy text";
+// if (fr.indexOf("some") != -1) {
+//   console.log("go");
+// } else {
+//   console.log("arrived");
+// }
+
+//toUpperCase();
+// function name(str) {
+//   if (!str) return str;
+//   return str[0].toUpperCase() + str.slice(1);
+// }
+// console.log(name("john"));
