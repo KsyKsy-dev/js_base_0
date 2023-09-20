@@ -364,7 +364,7 @@ function checkNumber() {}
 let n = 0;
 
 do {
-  n = +prompt("add number", "0");
-  console.log(n);
+  n = prompt("add number", "0");
+  console.log(n, typeof n);
 } while (typeof n !== "number");
 checkNumber();
