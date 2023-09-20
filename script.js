@@ -397,6 +397,13 @@
 // console.log(randomInt(3, 8));
 
 //strings
-for (let char of "hey") {
-  console.log(char);
-}
+// for (let char of "hey") {
+//   console.log(char);
+// }
+
+// srting are amutuble
+
+let m = "TWO";
+
+let n = m[0] + m[2];
+console.log(n);
