@@ -379,9 +379,19 @@
 
 //minmax random number exept max
 
-function random(min, max) {
-  //Math.random()* (max-min)
-  //min + value
-  return min + Math.random() * (max - min);
-}
-console.log(random(1, 3));
+// function random(min, max) {
+//   //Math.random()* (max-min)
+//   //min + value
+//   return min + Math.random() * (max - min);
+// }
+// console.log(random(1, 3));
+
+// random iteger from min to max including max
+
+//
+// function randomInt(min, max) {
+//   // Math.radom* (max-min+1)
+//   // add min
+//   return parseInt(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(randomInt(3, 8));
