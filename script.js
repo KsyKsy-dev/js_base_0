@@ -395,3 +395,8 @@
 //   return parseInt(Math.random() * (max - min + 1)) + min;
 // }
 // console.log(randomInt(3, 8));
+
+//strings
+for (let char of "hey") {
+  console.log(char);
+}
