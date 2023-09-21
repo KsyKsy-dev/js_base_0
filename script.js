@@ -477,9 +477,17 @@
 //   console.log(f);
 // }
 // array comparison with primitives
-let arr = [];
-let arr1 = [];
-console.log([] == []);
-console.log(0 == []);
-console.log(0 == "");
-console.log("0" == "");
+// let arr = [];
+// let arr1 = [];
+// console.log([] == []);
+// console.log(0 == []);
+// console.log(0 == "");
+// console.log("0" == "");
+
+let msk = ["Jazz", "Blues"];
+
+msk.push("Roxìck-n-Roll");
+console.log(msk);
+msk.Math.floor((msk.lengt - 1) / 2) = "Classics";
+
+console.log(msk);
