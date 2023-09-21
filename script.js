@@ -449,12 +449,18 @@
 
 // spam check
 
-function checkSpam(fr) {
-  console.log(fr);
+// function checkSpam(fr) {
+//   console.log(fr);
 
-  let fr1 = fr.toLowerCase();
-  return fr1.includes("xxx", 0) || fr1.includes("viagra", 0);
+//   let fr1 = fr.toLowerCase();
+//   return fr1.includes("xxx", 0) || fr1.includes("viagra", 0);
+// }
+// console.log(checkSpam(" for me xxx"));
+// console.log(checkSpam(" for me Viagra"));
+// console.log(checkSpam(" for me no way just going ahead"));
+
+// subst string
+function curentCurrency(n) {
+  return +n.slice(1);
 }
-console.log(checkSpam(" for me xxx"));
-console.log(checkSpam(" for me Viagra"));
-console.log(checkSpam(" for me no way just going ahead"));
+console.log(curentCurrency("$120") === 120);
