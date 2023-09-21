@@ -472,7 +472,12 @@
 // //shorter sintax arr.at(-1)
 // console.log(arr.at(-1));
 
-let fr = ["o", "b", "d"];
-for (let f of fr) {
-  console.log(f);
-}
+// let fr = ["o", "b", "d"];
+// for (let f of fr) {
+//   console.log(f);
+// }
+// array comparison with primitives
+let arr = [];
+let arr1 = [];
+console.log([] == []);
+console.log(0 == []);
