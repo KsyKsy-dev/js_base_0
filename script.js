@@ -460,7 +460,19 @@
 // console.log(checkSpam(" for me no way just going ahead"));
 
 // subst string
-function curentCurrency(n) {
-  return +n.slice(1);
+// function curentCurrency(n) {
+//   return +n.slice(1);
+// }
+// console.log(curentCurrency("$120") === 120);
+
+// array last element access
+// let arr = [2, 3, 4, 5, 6];
+
+// console.log(arr[arr.length - 1]);
+// //shorter sintax arr.at(-1)
+// console.log(arr.at(-1));
+
+let fr = ["o", "b", "d"];
+for (let f of fr) {
+  console.log(f);
 }
-console.log(curentCurrency("$120") === 120);
