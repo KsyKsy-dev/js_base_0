@@ -446,3 +446,14 @@
 //   return str[0].toUpperCase() + str.slice(1);
 // }
 // console.log(name("john"));
+
+// spam check
+
+function checkSpam(targ, fra) {
+  console.log(targ);
+  targ.toUpperCase();
+  fra.toUpperCase();
+  return targ.includes(fra, 0);
+}
+console.log(checkSpam(" for me xxx", "xxx"));
+console.log(checkSpam(" for me xxx", "xxx"));
