@@ -449,11 +449,12 @@
 
 // spam check
 
-function checkSpam(targ, fra) {
-  console.log(targ);
-  targ.toUpperCase();
-  fra.toUpperCase();
-  return targ.includes(fra, 0);
+function checkSpam(fr) {
+  console.log(fr);
+
+  let fr1 = fr.toLowerCase();
+  return fr1.includes("xxx", 0) || fr1.includes("viagra", 0);
 }
-console.log(checkSpam(" for me xxx", "xxx"));
-console.log(checkSpam(" for me xxx", "xxx"));
+console.log(checkSpam(" for me xxx"));
+console.log(checkSpam(" for me Viagra"));
+console.log(checkSpam(" for me no way just going ahead"));
