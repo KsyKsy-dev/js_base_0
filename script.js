@@ -484,10 +484,29 @@
 // console.log(0 == "");
 // console.log("0" == "");
 
-let msk = ["Jazz", "Blues"];
+// let msk = ["Jazz", "Blues"];
 
-msk.push("Roxìck-n-Roll");
-console.log(msk);
-msk.Math.floor((msk.lengt - 1) / 2) = "Classics";
+// msk.push("Roxìck-n-Roll");
+// console.log(msk);
+// msk.Math.floor((msk.lengt - 1) / 2) = "Classics";
 
-console.log(msk);
+// console.log(msk);
+
+// let arr = [2, 4];
+// arr.push(function () {
+//   console.log(this);
+// });
+
+// arr[2]();
+
+// arr method number imput
+
+function sumInput() {
+  let n;
+  do {
+    n = prompt("add numeric value", 0);
+    console.log(typeof n, n);
+  } while (isFinite(n));
+  console.log(typeof n, n);
+}
+sumInput();
