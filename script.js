@@ -503,10 +503,17 @@
 
 function sumInput() {
   let n;
-  do {
+  let arr = [];
+  let sum = 0;
+  while (true) {
     n = prompt("add numeric value", 0);
-    console.log(typeof n, n);
-  } while (isFinite(n));
-  console.log(typeof n, n);
+
+    if (!isFinite(n) || n === "" || n == null) break;
+    arr.push(+n);
+  }
+  for (let it of arr) {
+    sum += it;
+  }
+  return sum;
 }
-sumInput();
+console.log(sumInput());
