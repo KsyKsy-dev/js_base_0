@@ -501,19 +501,20 @@
 
 // arr method number imput
 
-function sumInput() {
-  let n;
-  let arr = [];
-  let sum = 0;
-  while (true) {
-    n = prompt("add numeric value", 0);
+// function sumInput() {
+//   let n;
+//   let arr = [];
+//   let sum = 0;
+//   while (true) {
+//     n = prompt("add numeric value", 0);
 
-    if (!isFinite(n) || n === "" || n == null) break;
-    arr.push(+n);
-  }
-  for (let it of arr) {
-    sum += it;
-  }
-  return sum;
-}
-console.log(sumInput());
+//     if (!isFinite(n) || n === "" || n == null) break;
+//     arr.push(+n);
+//   }
+//   for (let it of arr) {
+//     sum += it;
+//   }
+//   return sum;
+// }
+// console.log(sumInput());
+function getMaxSubSum(arr) {}
