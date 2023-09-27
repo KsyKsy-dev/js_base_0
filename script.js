@@ -517,4 +517,22 @@
 //   return sum;
 // }
 // console.log(sumInput());
-function getMaxSubSum(arr) {}
+
+//Find contigous sub array of array with the maximal sum of items
+function getMaxSubSum(arr) {
+  let startSum = 0;
+
+  for (let iterratorArray = 0; iterratorArray < arr.length; iterratorArray++) {
+    console.log(iterratorArray, " arr");
+    let maxSum = 0;
+    for (
+      let iterratorSubArray = 0;
+      iterratorSubArray < arr.length;
+      iterratorSubArray++
+    ) {
+      maxSum += arr[iterratorSubArray];
+      console.log(maxSum, "sub", "sircle " + iterratorSubArray);
+    }
+  }
+}
+getMaxSubSum([1, 3, -4, 5]);
