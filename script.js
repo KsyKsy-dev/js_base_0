@@ -522,17 +522,15 @@
 function getMaxSubSum(arr) {
   let startSum = 0;
 
-  for (let iterratorArray = 0; iterratorArray < arr.length; iterratorArray++) {
-    console.log(iterratorArray, " arr");
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i, " arr");
     let maxSum = 0;
-    for (
-      let iterratorSubArray = 0;
-      iterratorSubArray < arr.length;
-      iterratorSubArray++
-    ) {
-      maxSum += arr[iterratorSubArray];
-      console.log(maxSum, "sub", "sircle " + iterratorSubArray);
+    for (let it = i; it < arr.length; it++) {
+      let sumFixedStrat = +arr[it];
+      // startiteration item
+      maxSum += Math.max(maxSum, sumFixedStrat);
+      console.log(maxSum, " itt  " + arr[it]);
     }
   }
 }
-getMaxSubSum([1, 3, -4, 5]);
+getMaxSubSum([4, 6, -4, 5]);
