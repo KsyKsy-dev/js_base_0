@@ -572,6 +572,41 @@
 
 // concat
 
-let arr = [1, 3, 4];
-let arr0 = arr.concat(6, "0", [3, 56]);
-console.log(arr0.length);
+// let arr = [1, 3, 4];
+// let arr0 = arr.concat(6, "0", [3, 56]);
+// console.log(arr0.length);
+
+//concat arraylike
+
+// let arr = [1, 2];
+
+// let arrayLike = {
+//   0: "something",
+//   length: 1,
+// };
+
+// alert(arr.concat(arrayLike)); // 1,2,[object Object]
+
+// concat arr with arraylike using is.concatSpredable
+
+// let arr0 = ["2", 7];
+// let arrayLike0 = {
+//   0: "do",
+//   1: "it",
+//   [Symbol.isConcatSpreadable]: true,
+//   length: 2,
+// };
+// let newArr0 = arr0.concat(arrayLike0);
+// console.log(newArr0);
+
+// methods includes/indexOf/lastIndexOf
+
+//includes return true if arr includes el and false if doesn't
+
+// let arr = [2, 4];
+// console.log(arr.includes(3));
+
+// indexOf() return index of element if it lacated in arr, if doesn't returns -1, lasIndexOf() seraching from the end of arr
+
+// let arr = [2, 5, 8, 8];
+// console.log(arr.indexOf(8), arr.lastIndexOf(8));
