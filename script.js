@@ -564,8 +564,14 @@
 
 // slice return new arr
 
-let m = ["go", "stop", "continue"];
-let n = m.slice(-2);
-let l = m.slice(0, 2);
-let arr = m.slice();
-console.log(m, n, l, arr);
+// let m = ["go", "stop", "continue"];
+// let n = m.slice(-2);
+// let l = m.slice(0, 2);
+// let arr = m.slice();
+// console.log(m, n, l, arr);
+
+// concat
+
+let arr = [1, 3, 4];
+let arr0 = arr.concat(6, "0", [3, 56]);
+console.log(arr0.length);
