@@ -556,7 +556,16 @@
 // console.log(getMaxSubSum([100, 1, -9, 2, -3, 5])); // 100
 
 // array methods
+// splice
 
-let arr = [1, 2, 4];
-let arr2 = arr.splice(1, 2, 6, 8);
-console.log(arr, arr2);
+// let arr = [1, 2, 4];
+// let arr2 = arr.splice(1, 2, 6, 8);
+// console.log(arr, arr2);
+
+// slice return new arr
+
+let m = ["go", "stop", "continue"];
+let n = m.slice(-2);
+let l = m.slice(0, 2);
+let arr = m.slice();
+console.log(m, n, l, arr);
