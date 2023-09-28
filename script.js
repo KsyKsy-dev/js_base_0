@@ -519,18 +519,44 @@
 // console.log(sumInput());
 
 //Find contigous sub array of array with the maximal sum of items
-function maxSubArraySum(arr) {
-  let maxSum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    console.log(" arr " + i);
-    let subArr = 0;
-    for (let j = i; j < arr.length; j++) {
-      subArr += arr[j];
-      console.log(" subArr " + subArr, "circle  " + j);
-      maxSum = Math.max(subArr, maxSum);
-      console.log("maxSum " + maxSum);
-    }
-  }
-  console.log("Arr maxSum " + maxSum);
-}
-maxSubArraySum([0, -2, 5, 7, -5, 0, 6, 9]);
+// function maxSubArraySum(arr) {
+//   let maxSum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     //console.log(" arr " + i);
+//     let subArr = 0;
+//     for (let j = i; j < arr.length; j++) {
+//       subArr += arr[j];
+//       //console.log(" subArr " + subArr, "circle  " + j);
+//       maxSum = Math.max(subArr, maxSum);
+//       //console.log("maxSum " + maxSum);
+//     }
+//   }
+//   console.log("Arr maxSum " + maxSum);
+//   return maxSum;
+// }
+// console.log(maxSubArraySum([0, -2, 5, 7, -5, 0, 6, 9]));
+
+// function getMaxSubSum(arr) {
+//   let maxSum = 0;
+//   let partialSum = 0;
+//   for (let item of arr) {
+//     partialSum += item;
+//     if (partialSum < 0) {
+//       partialSum = 0;
+//     }
+//     maxSum = Math.max(partialSum, maxSum);
+//   }
+//   return maxSum;
+// }
+
+// console.log(getMaxSubSum([-1, 2, 3, -1, 6, 9])); // 5
+// console.log(getMaxSubSum([-1, 2, 3, -9, 11])); // 11
+// console.log(getMaxSubSum([-2, -1, 1, 2])); // 3
+// console.log(getMaxSubSum([1, 2, 3])); // 6
+// console.log(getMaxSubSum([100, 1, -9, 2, -3, 5])); // 100
+
+// array methods
+
+let arr = [1, 2, 4];
+let arr2 = arr.splice(1, 2, 6, 8);
+console.log(arr, arr2);
