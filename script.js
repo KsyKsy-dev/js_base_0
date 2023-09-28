@@ -519,4 +519,18 @@
 // console.log(sumInput());
 
 //Find contigous sub array of array with the maximal sum of items
-function maxSubarraySum(arr) {}
+function maxSubArraySum(arr) {
+  let maxSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    console.log(" arr " + i);
+    let subArr = 0;
+    for (let j = i; j < arr.length; j++) {
+      subArr += arr[j];
+      console.log(" subArr " + subArr, "circle  " + j);
+      maxSum = Math.max(subArr, maxSum);
+      console.log("maxSum " + maxSum);
+    }
+  }
+  console.log("Arr maxSum " + maxSum);
+}
+maxSubArraySum([0, -2, 5, 7, -5, 0, 6, 9]);
