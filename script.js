@@ -610,3 +610,29 @@
 
 // let arr = [2, 5, 8, 8];
 // console.log(arr.indexOf(8), arr.lastIndexOf(8));
+
+//find/findIndexOf/findLastIndexOf
+
+// find works with item, index, array
+
+let arr = [
+  { id: 0, name: "who" },
+  { id: 1, name: "why" },
+  { id: 2, name: "when" },
+];
+let foundedEl = arr.find((el) => {
+  return el.id == 1;
+});
+console.log(foundedEl.name);
+
+//method findIndex/ findLastIndex are returning the index of the element
+
+let urs = [
+  { user: 0, nick: "nemo" },
+  { user: 1, nick: "dori" },
+  { user: 2, nick: "nemo" },
+];
+
+let indexOfUSer = urs.findIndex((el) => el.nick === "nemo");
+let indexOfUser = urs.findLastIndex((el) => el.nick === "nemo");
+console.log(indexOfUser, indexOfUSer);
