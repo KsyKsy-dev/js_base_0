@@ -673,9 +673,19 @@
 
 //spolit method
 
-let names = "Bill, Mary, Mike";
+// let names = "Bill, Mary, Mike";
 
-let arr = names.split(", ");
-for (let name of arr) {
-  console.log(`wright message  ${name}`);
-}
+// let arr = names.split(", ");
+// for (let name of arr) {
+//   console.log(`wright message  ${name}`);
+// }
+// reduce
+
+let numbers = [2, 4, 1, 5];
+
+let calc = numbers.reduce(function (acc, item, index, arr) {
+  console.log(acc + item);
+  return acc + item;
+}, 3);
+
+console.log(calc);
