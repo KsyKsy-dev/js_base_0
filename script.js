@@ -661,7 +661,21 @@
 // console.log(arr);
 
 // string comare method sort+localCompare()
-let arr = ["ancora", "alarm", "Alabama", "brother, brain"];
+// let arr = ["ancora", "alarm", "Alabama", "brother, brain"];
 
-arr.sort((a, b) => a.localeCompare(b));
-console.log(arr);
+// arr.sort((a, b) => a.localeCompare(b));
+// console.log(arr);
+
+//reverse method
+// let arr = ["ancora", "alarm", "Alabama", "brother"];
+// arr.reverse();
+// console.log(arr);
+
+//spolit method
+
+let names = "Bill, Mary, Mike";
+
+let arr = names.split(", ");
+for (let name of arr) {
+  console.log(`wright message  ${name}`);
+}
