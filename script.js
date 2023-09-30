@@ -681,11 +681,11 @@
 // }
 // reduce
 
-let numbers = [2, 4, 1, 5];
+// let numbers = [2, 4, 1, 5];
 
-let calc = numbers.reduce(function (acc, item, index, arr) {
-  console.log(acc + item);
-  return acc + item;
-}, 3);
+// let calc = numbers.reduce(function (acc, item, index, arr) {
+//   console.log(acc + item);
+//   return acc + item;
+// }, 3);
 
-console.log(calc);
+// console.log(calc);
