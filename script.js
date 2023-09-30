@@ -646,3 +646,14 @@
 
 // let newUsrs = usr.filter((el, index, arr) => el.nick === "nemo");
 // console.log(newUsrs);
+
+//map
+
+// let arr = ["some", "dummy", "text"].map((el) => el.length);
+// console.log(arr);
+
+//sort method returns modified arr and modifies array itself
+
+let numbers = [2, 4, 18, 5, 22];
+numbers.sort((a, b) => b - a);
+console.log(numbers);
