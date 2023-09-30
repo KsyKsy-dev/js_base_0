@@ -654,6 +654,14 @@
 
 //sort method returns modified arr and modifies array itself
 
-let numbers = [2, 4, 18, 5, 22];
-numbers.sort((a, b) => b - a);
-console.log(numbers);
+// let arr = [2, 4, 18, 5, 22].sort(function (a, b) {
+//   console.log(a + " > < " + b);
+//   return a - b;
+// });
+// console.log(arr);
+
+// string comare method sort+localCompare()
+let arr = ["ancora", "alarm", "Alabama", "brother, brain"];
+
+arr.sort((a, b) => a.localeCompare(b));
+console.log(arr);
