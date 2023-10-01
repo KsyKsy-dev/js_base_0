@@ -689,3 +689,20 @@
 // }, 3);
 
 // console.log(calc);
+// let arr = [];
+// let obj = {};
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray(obj));
+
+// camelize
+
+function camelize(str) {
+  let startStr = str.split("");
+  let indexDash = startStr.filter((item, index) => {
+    item == "-";
+    console.log(index);
+  });
+  console.log(indexDash);
+  return startStr;
+}
+console.log(camelize("my-str-gg"));
