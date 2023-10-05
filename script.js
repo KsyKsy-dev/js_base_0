@@ -698,12 +698,12 @@
 
 function camelize(str) {
   let startStr = str.split("");
-  let indexDush = startStr.filter((item, index, arr) => {
+  let indexDash = startStr.filter((item, index, arr) => {
     item == "-";
     console.log();
     return arr.index;
   });
-  console.log(indexDush);
+  console.log(indexDash);
 }
 
 console.log(camelize("my-str-gg"));
