@@ -698,10 +698,10 @@
 
 function camelize(str) {
   let startStr = str.split("");
+  console.log(startStr);
   let indexDash = startStr.filter((item, index, arr) => {
-    item == "-";
-    console.log();
-    return arr.index;
+    console.log(item.index);
+    return index.item === "-";
   });
   console.log(indexDash);
 }
