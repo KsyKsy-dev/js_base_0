@@ -699,11 +699,11 @@
 function camelize(str) {
   let startStr = str.split("");
   console.log(startStr);
-  let indexDash = startStr.filter((item, index, arr) => {
-    console.log(item.index);
-    return index.item === "-";
-  });
-  console.log(indexDash);
-}
 
+  let indexOfDash = [];
+  startStr.forEach((index, item) => {
+    if (item == "-") {
+    }
+  });
+}
 console.log(camelize("my-str-gg"));
