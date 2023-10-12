@@ -703,6 +703,7 @@ function camelize(str) {
   let indexOfDash = [];
   startStr.forEach((index, item) => {
     if (item == "-") {
+      console.log();
     }
   });
 }
