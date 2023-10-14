@@ -709,5 +709,10 @@
 // }
 // console.log(camelize("my-str-gg"));
 
-let arr = [2, 4, 5];
-console.log(arr.toString());
+// let arr = [2, 4, 5];
+// console.log(arr.toString());
+// console.log(arr["1"]);
+
+let arr = [];
+arr[8] = "I'm empty string";
+console.log(arr.length, arr[1]);
