@@ -696,15 +696,18 @@
 
 // camelize
 
-function camelize(str) {
-  let startStr = str.split("");
-  console.log(startStr);
+// function camelize(str) {
+//   let startStr = str.split("");
+//   console.log(startStr);
 
-  let indexOfDash = [];
-  startStr.forEach((index, item) => {
-    if (item == "-") {
-      console.log();
-    }
-  });
-}
-console.log(camelize("my-str-gg"));
+//   let indexOfDash = [];
+//   startStr.forEach((index, item) => {
+//     if (item == "-") {
+//       console.log();
+//     }
+//   });
+// }
+// console.log(camelize("my-str-gg"));
+
+let arr = [2, 4, 5];
+console.log(arr.toString());
