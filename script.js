@@ -715,4 +715,5 @@
 
 let arr = [];
 arr[8] = "I'm empty string";
+arr.length = 2;
 console.log(arr.length, arr[1]);
