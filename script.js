@@ -735,13 +735,30 @@
 // console.log(arr0, copyArr, copyArr0);
 
 // callback function this value
-let arg = 23;
-let obj = { key: "value" };
+// let arg = 23;
+// let obj = { key: "value" };
 
-[3, 5, 7].forEach(function () {
+// [3, 5, 7].forEach(function () {
+//   console.log(this);
+// }, arg);
+
+// [4, 6].forEach(function () {
+//   console.log(this.key);
+// }, obj);
+
+// [5, 3, 5].forEach(function () {
+//   console.log(this);
+// }, null);
+// this keyword
+
+let fn = function () {
   console.log(this);
-}, arg);
+};
+let afn = () => console.log(this);
 
-[4, 6].forEach(function () {
-  console.log(this.key);
-}, obj);
+let obj = {
+  a: fn,
+  b: afn,
+};
+obj.a();
+obj.b();
