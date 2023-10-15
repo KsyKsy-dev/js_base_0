@@ -718,18 +718,30 @@
 // arr.length = 2;
 // console.log(arr.length, arr[1]);
 
-let arr = [3, 4, 6];
-let arr0 = [4, 4, 6];
-/// mutating copy
+// let arr = [3, 4, 6];
+// let arr0 = [4, 4, 6];
+// /// mutating copy
 
-let arrCopy0 = arr.copyWithin();
-arrCopy0[0] = "mute";
-console.log(arr, arrCopy0);
+// let arrCopy0 = arr.copyWithin();
+// arrCopy0[0] = "mute";
+// console.log(arr, arrCopy0);
 
-//unmutabting copy
+//unmutating copy
 
-let copyArr = [...arr0];
-let copyArr0 = arr0.slice();
-copyArr0[0] = "I'm sliced";
-copyArr[0] = "go";
-console.log(arr0, copyArr, copyArr0);
+// let copyArr = [...arr0];
+// let copyArr0 = arr0.slice();
+// copyArr0[0] = "I'm sliced";
+// copyArr[0] = "go";
+// console.log(arr0, copyArr, copyArr0);
+
+// callback function this value
+let arg = 23;
+let obj = { key: "value" };
+
+[3, 5, 7].forEach(function () {
+  console.log(this);
+}, arg);
+
+[4, 6].forEach(function () {
+  console.log(this.key);
+}, obj);
