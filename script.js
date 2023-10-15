@@ -719,6 +719,17 @@
 // console.log(arr.length, arr[1]);
 
 let arr = [3, 4, 6];
+let arr0 = [4, 4, 6];
+/// mutating copy
 
-let copyArr = [...arr];
-console.log(copyArr);
+let arrCopy0 = arr.copyWithin();
+arrCopy0[0] = "mute";
+console.log(arr, arrCopy0);
+
+//unmutabting copy
+
+let copyArr = [...arr0];
+let copyArr0 = arr0.slice();
+copyArr0[0] = "I'm sliced";
+copyArr[0] = "go";
+console.log(arr0, copyArr, copyArr0);
