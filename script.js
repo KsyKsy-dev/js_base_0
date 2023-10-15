@@ -713,7 +713,12 @@
 // console.log(arr.toString());
 // console.log(arr["1"]);
 
-let arr = [];
-arr[8] = "I'm empty string";
-arr.length = 2;
-console.log(arr.length, arr[1]);
+// let arr = [];
+// arr[8] = "I'm empty string";
+// arr.length = 2;
+// console.log(arr.length, arr[1]);
+
+let arr = [3, 4, 6];
+
+let copyArr = [...arr];
+console.log(copyArr);
