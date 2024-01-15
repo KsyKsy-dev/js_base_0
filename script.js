@@ -751,14 +751,23 @@
 // }, null);
 // this keyword
 
-let fn = function () {
-  console.log(this);
-};
-let afn = () => console.log(this);
+// let fn = function () {
+//   console.log(this);
+// };
+// let afn = () => console.log(this);
 
+// let obj = {
+//   a: fn,
+//   b: afn,
+// };
+// obj.a();
+// obj.b();
 let obj = {
-  a: fn,
-  b: afn,
+  a: 0,
 };
-obj.a();
-obj.b();
+obj.str = 5;
+console.log(obj.str);
+
+let str = "str";
+str.test = 5;
+console.log(str.test);
