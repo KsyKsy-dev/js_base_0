@@ -762,12 +762,17 @@
 // };
 // obj.a();
 // obj.b();
-let obj = {
-  a: 0,
-};
-obj.str = 5;
-console.log(obj.str);
+// let obj = {
+//   a: 0,
+// };
+// obj.str = 5;
+// console.log(obj.str);
 
-let str = "str";
-str.test = 5;
-console.log(str.test);
+// let str = "str";
+// str.test = 5;
+// console.log(str.test);
+
+//Numbers
+
+let i = 1e9;
+console.log(i);
