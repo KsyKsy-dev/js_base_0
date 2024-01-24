@@ -774,5 +774,17 @@
 
 //Numbers
 
-let i = 1e9;
-console.log(i);
+// let i = 1e9;
+// console.log(i);
+
+// let i = 1e4;
+// console.log(i === 1 * 10000);
+
+// let mcs = 0.000001;
+// console.log(mcs === 1 * 1e-6);
+
+// toString(base);
+
+let num = 255;
+console.log(num.toString(16));
+console.log(num.toString(2));
