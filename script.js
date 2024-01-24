@@ -798,14 +798,21 @@
 
 //dounw
 
-console.log(Math.floor(3.6));
+// console.log(Math.floor(3.6));
 
-//up
+// //up
 
-console.log(Math.ceil(3.6));
+// console.log(Math.ceil(3.6));
 
-//nearest
-console.log(Math.round(3.6));
+// //nearest
+// console.log(Math.round(3.6));
 
-//trunk the decimal not for ex
-console.log(Math.trunc(3, 6));
+// //trunk the decimal not for ex
+// console.log(Math.trunc(3, 6));
+
+// 2nd digit after decimal Math.round(n*100)/100
+
+// let n = 123.567;
+// console.log(n * 100);
+
+// console.log(Math.round(n * 100) / 100);
