@@ -785,6 +785,11 @@
 
 // toString(base);
 
-let num = 255;
-console.log(num.toString(16));
-console.log(num.toString(2));
+// let num = 255;
+// console.log(num.toString(16));
+// console.log(num.toString(2));
+
+// two dots call method
+
+//console.log((2343989859).toString(36));
+//console.log(4367676.toString(36)); ERROR!!
