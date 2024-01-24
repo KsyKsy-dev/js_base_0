@@ -793,3 +793,19 @@
 
 //console.log((2343989859).toString(36));
 //console.log(4367676.toString(36)); ERROR!!
+
+//rounding
+
+//dounw
+
+console.log(Math.floor(3.6));
+
+//up
+
+console.log(Math.ceil(3.6));
+
+//nearest
+console.log(Math.round(3.6));
+
+//trunk the decimal not for ex
+console.log(Math.trunc(3, 6));
