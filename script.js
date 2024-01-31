@@ -816,3 +816,14 @@
 // console.log(n * 100);
 
 // console.log(Math.round(n * 100) / 100);
+
+// toFixed() method returns a sring
+
+// let n = 35.488;
+
+// console.log(typeof +n.toFixed(7));
+
+// isNaN() converts argument to a number and check it for NaN
+
+let str = "go";
+let n = 2;
