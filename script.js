@@ -825,5 +825,22 @@
 
 // isNaN() converts argument to a number and check it for NaN
 
-let str = "go";
-let n = 2;
+// let str = "go";
+// let n = 2;
+// console.log(isNaN(str));
+// the value NaN is unique, it doesn't equal to anything including itself
+// console.log(NaN === NaN);
+
+//isFinite() converts its argument and true if it's a number false if its Infinite/-Infinite/NaN
+// console.log(isFinite("22"));
+// console.log(isFinite("go"));
+// console.log(isFinite(Infinity));
+
+// isFinite() used if the to validate weather the string value is a regular number( ampty strig or spase is converted to 0)
+// let num = +prompt("Enter number", "");
+// console.log(isFinite(num));
+
+// Object.is()method
+
+console.log(Object.is(0, -0));
+console.log(Object.is(NaN, NaN));
