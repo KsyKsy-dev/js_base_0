@@ -842,5 +842,25 @@
 
 // Object.is()method
 
-console.log(Object.is(0, -0));
-console.log(Object.is(NaN, NaN));
+// console.log(Object.is(0, -0));
+// console.log(Object.is(NaN, NaN));
+//parseInt() parseFloat()
+
+// console.log(parseInt("200px"));
+// console.log(parseFloat("123,4euro"));
+// console.log(parseInt("a77"));
+// console.log(parseInt("ff", 16));
+// let m = +prompt("add number one", " ");
+// let n = +prompt("add number 2", " ");
+// console.log(n + m);
+
+// let num;
+
+// function readNum() {
+//   do {
+//     num = +prompt("add number", " ");
+//     if (num === null || num === " ") return null;
+//   } while (!isFinite(num));
+//   return num;
+// }
+// console.log(num);
