@@ -861,6 +861,35 @@
 //     num = +prompt("add number", " ");
 //     if (num === null || num === " ") return null;
 //   } while (!isFinite(num));
-//   return num;
+//   return +num;
 // }
 // console.log(num);
+// let person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   address: {
+//     city: "Example City",
+//     country: "Example Country",
+//   },
+// };
+// let person1 = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   address: {
+//     city: "Example City",
+//     country: "Example Country",
+//   },
+// };
+
+// console.log(person.toString());
+// console.log("str" + person);
+
+// console.log(person + person1);
+
+// chae position
+
+let str = "str";
+console.log(str[0]);
+console.log(str.charAt(1));
