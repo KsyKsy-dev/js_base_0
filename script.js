@@ -890,6 +890,42 @@
 
 // chae position
 
-let str = "str";
-console.log(str[0]);
-console.log(str.charAt(1));
+// let str = "str";
+// console.log(str[0]);
+// // last characker just for atr.at
+// console.log(str.at(-1));
+
+// itterate over str
+
+// for (let char of "str") {
+//   console.log(char);
+// }
+
+// indexOf() 1- loop over the string, 2. break after found char, 3- repeat from  +1 from the new position
+// outout data
+// let str = "As sly as fox, as strong as ox";
+// let pos = 0;
+// let char = "as";
+// while (true) {
+//   let foundPos = str.indexOf(char, pos);
+//   console.log(foundPos);
+// }
+// while (true) {
+//   let foundPos = str.indexOf(char, pos);
+//   console.log(foundPos);
+//   if (foundPos == -1) break;
+//   pos = foundPos + 1;
+// }
+//shorter way
+
+// let str = "As sly as fox, as strong as ox";
+// let pos = -1;
+// let char = "as";
+
+// while ((pos = str.indexOf(char, pos + 1)) != -1) {
+//   console.log(pos);
+// }
+// let str = "here we are";
+// if (str.indexOf("here") != -1) {
+//   console.log("checked");
+// }
