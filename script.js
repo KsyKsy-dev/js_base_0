@@ -956,3 +956,12 @@
 //   str += String.fromCodePoint(i);
 // }
 // console.log(str);
+
+function toUpperFirstChar(str) {
+  // slice first char
+  if (!str) {
+    return str;
+  }
+  return str.toUpperCase(0);
+}
+toUpperFirstChar("string");
