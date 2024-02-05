@@ -929,3 +929,9 @@
 // if (str.indexOf("here") != -1) {
 //   console.log("checked");
 // }
+// get substring slice method
+
+// let str = "sometext";
+
+// console.log(str.slice(0, 2));
+// console.log(str.slice(3));
