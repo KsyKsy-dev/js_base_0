@@ -931,7 +931,28 @@
 // }
 // get substring slice method
 
-// let str = "sometext";
+//let str = "sometext";
 
 // console.log(str.slice(0, 2));
 // console.log(str.slice(3));
+//console.log(str.slice(3, -1));
+
+// substring() method
+// let str = "sometext";
+
+// console.log(str.substring(0, 2));
+// console.log(str.substring(2, 0));
+// console.log(str.slice(2, 0));
+// slice;
+
+// utf-16 .codePontAt(); String.fromeCodePoint()
+// console.log("Z".codePointAt(0));
+// console.log("Ö".codePointAt(0));
+// console.log("Ö" > "Z");
+// let str = "";
+// console.log(String.fromCodePoint(65));
+
+// for (let i = 65; i <= 220; i++) {
+//   str += String.fromCodePoint(i);
+// }
+// console.log(str);
