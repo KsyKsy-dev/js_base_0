@@ -957,11 +957,23 @@
 // }
 // console.log(str);
 
-function toUpperFirstChar(str) {
-  // slice first char
-  if (!str) {
-    return str;
-  }
-  return str.toUpperCase(0);
-}
-toUpperFirstChar("string");
+// function toUpperFirstChar(str) {
+
+//   if (!str) {
+//     return str;
+//   }
+//   return str.toUpperCase(0);
+// }
+// toUpperFirstChar("string");
+
+// function checkSpam(str) {
+//   str = str.toLowerCase();
+//   if (str.includes("xxx") || str.includes("viagra")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkSpam("head"));
+
+f;
