@@ -976,4 +976,14 @@
 // }
 // console.log(checkSpam("head"));
 
-f;
+// function trunk(str, maxLength) {
+//   if (str.length > maxLength) {
+//     return str.slice(0, maxLength) + " ...";
+//   } else return str.slice(0, maxLength);
+// }
+// console.log(trunk("my str", 5));
+
+// function parse(value) {
+//   return +value.slice(1);
+// }
+// console.log(parse("$120") == 120);
