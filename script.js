@@ -987,3 +987,25 @@
 //   return +value.slice(1);
 // }
 // console.log(parse("$120") == 120);
+// let obj = [];
+// let obj1 = [];
+// alert(obj + obj1, "g");
+
+let arr = [];
+function sumInput() {
+  let value;
+  let sum = 0;
+  while (true) {
+    sum = 0;
+    value = +prompt("add value", " ");
+
+    if (!Number.isFinite(value) || value === " ") break;
+    arr.push(value);
+  }
+  console.log(arr);
+  for (let n of arr) {
+    sum += n;
+  }
+  return sum;
+}
+console.log(sumInput());
