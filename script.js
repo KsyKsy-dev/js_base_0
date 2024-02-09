@@ -991,21 +991,40 @@
 // let obj1 = [];
 // alert(obj + obj1, "g");
 
-let arr = [];
-function sumInput() {
-  let value;
-  let sum = 0;
-  while (true) {
-    sum = 0;
-    value = +prompt("add value", " ");
+// let arr = [];
+// function sumInput() {
+//   let value;
+//   let sum = 0;
+//   while (true) {
+//     sum = 0;
+//     value = +prompt("add value", " ");
 
-    if (!Number.isFinite(value) || value === " ") break;
-    arr.push(value);
+//     if (!Number.isFinite(value) || value === " ") break;
+//     arr.push(value);
+//   }
+//   console.log(arr);
+//   for (let n of arr) {
+//     sum += n;
+//   }
+//   return sum;
+// }
+// console.log(sumInput());
+let sumArr = [];
+let collectArr = [];
+let sum;
+
+function maxSubArray(arr) {
+  let finalMax = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+    sum = 0;
+    for (let n = 0; n < arr.length - i; n++) {
+      if (arr[i + n] <= 0) break;
+      sum += arr[i + n];
+    }
+    sumArr.push(sum);
+    collectArr = sumArr.sort((a, b) => a + b);
+    finalMax = collectArr[0];
   }
-  console.log(arr);
-  for (let n of arr) {
-    sum += n;
-  }
-  return sum;
+  return finalMax;
 }
-console.log(sumInput());
+console.log(maxSubArray([-9, -10, -2, -4, -6]));
