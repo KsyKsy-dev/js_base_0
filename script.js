@@ -1009,22 +1009,40 @@
 //   return sum;
 // }
 // console.log(sumInput());
-let sumArr = [];
-let collectArr = [];
-let sum;
 
-function maxSubArray(arr) {
-  let finalMax = 0;
-  for (let i = 0; i < arr.length - 1; i++) {
-    sum = 0;
-    for (let n = 0; n < arr.length - i; n++) {
-      if (arr[i + n] <= 0) break;
-      sum += arr[i + n];
-    }
-    sumArr.push(sum);
-    collectArr = sumArr.sort((a, b) => a + b);
-    finalMax = collectArr[0];
-  }
-  return finalMax;
-}
-console.log(maxSubArray([-9, -10, -2, -4, -6]));
+// siluttion O(n pow 2)
+// let sumArr = [];
+// let collectArr = [];
+// let sum;
+
+// function maxSubArray(arr) {
+//   let finalMax = 0;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     sum = 0;
+//     for (let n = 0; n < arr.length - i; n++) {
+//       if (arr[i + n] <= 0) break;
+//       sum += arr[i + n];
+//     }
+//     sumArr.push(sum);
+//     collectArr = sumArr.sort((a, b) => a + b);
+//     finalMax = collectArr[0];
+//   }
+//   return finalMax;
+// }
+// console.log(maxSubArray([-9, -10, -2, -4, -6]));
+
+// solution O(n);
+
+// function getMaxSum(arr) {
+//   let maxSum = 0;
+//   let partialSum = 0;
+//   for (let item of arr) {
+//     partialSum += item;
+//     maxSum = Math.max(maxSum, partialSum);
+//     console.log(maxSum, partialSum);
+//     if (partialSum < 0) maxSum = 0;
+//   }
+
+//   return maxSum;
+// }
+// console.log(getMaxSum([2, -2, 0, 3, 4]));
