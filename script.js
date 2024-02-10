@@ -1060,13 +1060,34 @@
 // arr1.concat(arr, arr0);
 // console.log(arr1.concat(arr, arr0));
 //concat array like obj
-let arr = [1, 2];
+// let arr = [1, 2];
 
-let arrayLike = {
-  0: "something",
-  1: 2,
-  [Symbol.isConcatSpreadable]: true,
-  length: 2,
-};
+// let arrayLike = {
+//   0: "something",
+//   1: 2,
+//   [Symbol.isConcatSpreadable]: true,
+//   length: 2,
+// };
 
-console.log(arr.concat(arrayLike));
+// console.log(arr.concat(arrayLike));
+// let arr = [2, 4];
+// let arr0 = arr.forEach((e) => {
+//   e + 2;
+// });
+// console.log(arr);
+
+//indexOf and lastIndexOf index and  includes false or true( handle NaN correctly)
+
+let arr = [2, 3, 4, 5, 2, 4, 3];
+
+// console.log(arr.indexOf(3, 2)); //startinf position 3
+// console.log(arr.indexOf(2)); // no strting position
+// console.log(arr.indexOf(0)); // -1 if do not contain
+
+// console.log(arr.includes(2));
+// console.log(arr.includes(3, 2));
+// console.log(arr.includes(0));
+
+// console.log(arr.lastIndexOf(0));
+// console.log(arr.lastIndexOf(3));
+// console.log(arr.lastIndexOf(2));
