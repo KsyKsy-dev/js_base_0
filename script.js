@@ -1046,3 +1046,27 @@
 //   return maxSum;
 // }
 // console.log(getMaxSum([2, -2, 0, 3, 4]));
+
+// array methods
+
+// let arr = [1, 3, 4];
+// delete arr[2];
+// console.log(arr[2], arr, arr.length);
+
+// arr.concat();
+// let arr = [3, 4];
+// let arr0 = [1, 3];
+// let arr1 = [];
+// arr1.concat(arr, arr0);
+// console.log(arr1.concat(arr, arr0));
+//concat array like obj
+let arr = [1, 2];
+
+let arrayLike = {
+  0: "something",
+  1: 2,
+  [Symbol.isConcatSpreadable]: true,
+  length: 2,
+};
+
+console.log(arr.concat(arrayLike));
