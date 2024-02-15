@@ -1122,3 +1122,9 @@
 // console.log(userLastIndex);
 // let filtered = users.filter((item) => item.id <= 3);
 // console.log(filtered);
+
+// map
+let arr = [0, 1, 2];
+
+let filtered = arr.map((item) => 1 + item);
+console.log(filtered);
