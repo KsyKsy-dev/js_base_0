@@ -1128,3 +1128,14 @@
 
 // let filtered = arr.map((item) => 1 + item);
 // console.log(filtered);
+
+// sort
+let arr = [3, 5, 7, 4, 6, 3];
+
+function sortF(a, b) {
+  if (a > b) return 1;
+  if (a == b) return 0;
+  if (a < b) return -1;
+}
+let sorted = arr.sort(sortF);
+console.log(sorted);
