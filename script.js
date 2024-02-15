@@ -1124,7 +1124,7 @@
 // console.log(filtered);
 
 // map
-let arr = [0, 1, 2];
+// let arr = [0, 1, 2];
 
-let filtered = arr.map((item) => 1 + item);
-console.log(filtered);
+// let filtered = arr.map((item) => 1 + item);
+// console.log(filtered);
