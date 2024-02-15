@@ -1107,16 +1107,18 @@
 
 //findIndex/ findLastIndex
 
-let users = [
-  { id: 1, name: "mr" },
-  { id: 2, name: "wh" },
-  { id: 3, name: "h" },
-  { id: 4, name: "mr" },
-];
+// let users = [
+//   { id: 1, name: "mr" },
+//   { id: 2, name: "wh" },
+//   { id: 3, name: "h" },
+//   { id: 4, name: "mr" },
+// ];
 
-let userIndex = users.findIndex((item) => item.name == "mr");
+// let userIndex = users.findIndex((item) => item.name == "mr");
 
-console.log(userIndex);
+// console.log(userIndex);
 
-let userLastIndex = users.findLastIndex((item) => item.name == "mr");
-console.log(userLastIndex);
+// let userLastIndex = users.findLastIndex((item) => item.name == "mr");
+// console.log(userLastIndex);
+// let filtered = users.filter((item) => item.id <= 3);
+// console.log(filtered);
