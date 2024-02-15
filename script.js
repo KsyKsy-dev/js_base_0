@@ -1164,3 +1164,4 @@ let arr = names.split(",");
 for (let name of arr) {
   console.log(` name of user ${name}`);
 }
+console.log(arr.join(";"));
