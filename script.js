@@ -1130,12 +1130,29 @@
 // console.log(filtered);
 
 // sort
-let arr = [3, 5, 7, 4, 6, 3];
+// let arr = [3, 5, 7, 4, 6, 3];
 
-function sortF(a, b) {
-  if (a > b) return 1;
-  if (a == b) return 0;
-  if (a < b) return -1;
-}
-let sorted = arr.sort(sortF);
-console.log(sorted);
+// function sortF(a, b) {
+//   if (a > b) return 1;
+//   if (a == b) return 0;
+//   if (a < b) return -1;
+// }
+// let sorted = arr.sort(sortF);
+// console.log(sorted);
+// let arr = [2, 4, "str", 0, "0", "a"];
+// let sorted = arr.sort(function (a, b) {
+//   console.log(a, "<>", b);
+//   return a - b;
+// });
+// console.log(sorted);
+
+// let arr = [3, 4, 1, 0];
+
+// let sorted = arr.sort((a, b) => a - b);
+// console.log(sorted);
+
+// let countries = ["Österreich", "Andorra", "Vietnam"];
+// console.log(countries.sort((a, b) => (a ? b : -1)));
+// console.log(countries.sort((a, b) => a.localeCompare(b)));
+let countries = ["Österreich", "Andorra", "Vietnam"];
+console.log(countries.reverse());
