@@ -1078,7 +1078,7 @@
 
 //indexOf and lastIndexOf index and  includes false or true( handle NaN correctly)
 
-let arr = [2, 3, 4, 5, 2, 4, 3];
+//let arr = [2, 3, 4, 5, 2, 4, 3];
 
 // console.log(arr.indexOf(3, 2)); //startinf position 3
 // console.log(arr.indexOf(2)); // no strting position
@@ -1091,3 +1091,8 @@ let arr = [2, 3, 4, 5, 2, 4, 3];
 // console.log(arr.lastIndexOf(0));
 // console.log(arr.lastIndexOf(3));
 // console.log(arr.lastIndexOf(2));
+
+let arr = ["a", "b", "c"];
+
+let presentValue = arr.find((e) => e > "b");
+console.log(arr.find((e) => e == ""));
