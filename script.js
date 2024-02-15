@@ -1154,5 +1154,13 @@
 // let countries = ["Österreich", "Andorra", "Vietnam"];
 // console.log(countries.sort((a, b) => (a ? b : -1)));
 // console.log(countries.sort((a, b) => a.localeCompare(b)));
-let countries = ["Österreich", "Andorra", "Vietnam"];
-console.log(countries.reverse());
+
+// let countries = ["Österreich", "Andorra", "Vietnam"];
+// console.log(countries.reverse());
+
+let names = "Marc, Michel, Ann, Mary";
+
+let arr = names.split(",");
+for (let name of arr) {
+  console.log(` name of user ${name}`);
+}
