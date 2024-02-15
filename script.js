@@ -1092,7 +1092,31 @@
 // console.log(arr.lastIndexOf(3));
 // console.log(arr.lastIndexOf(2));
 
-let arr = ["a", "b", "c"];
+// let arr = ["a", "b", "c"];
 
-let presentValue = arr.find((e) => e > "b");
-console.log(arr.find((e) => e == ""));
+// let presentValue = arr.find((e) => e > "b");
+// console.log(arr.find((e) => e == ""));
+// let users = [
+//   { id: 1, name: "mr" },
+//   { id: 2, name: "wh" },
+// ];
+
+// let user = users.find((item) => item.id == 1);
+
+// console.log("user name", user.name);
+
+//findIndex/ findLastIndex
+
+let users = [
+  { id: 1, name: "mr" },
+  { id: 2, name: "wh" },
+  { id: 3, name: "h" },
+  { id: 4, name: "mr" },
+];
+
+let userIndex = users.findIndex((item) => item.name == "mr");
+
+console.log(userIndex);
+
+let userLastIndex = users.findLastIndex((item) => item.name == "mr");
+console.log(userLastIndex);
