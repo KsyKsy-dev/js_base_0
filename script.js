@@ -1169,28 +1169,12 @@
 // let arr = [2, 5, 6, 8];
 // let calc = arr.reduce((sum, accomulator) => sum + accomulator, 0);
 // console.log(calc);
-let slicedStr = "";
-let camelizedLetter = "";
-let newStr = " ";
-let accStr = "";
-let arr = [];
-let startArr = [];
-
 function camelize(str) {
-  //for (let i = 0; i < str.length; i++) {
-  // if (str[i] == "_") {
-  //   newStr = str.slice(0, i + 1);
-  //   camelizedLetter = str[i + 1].toUpperCase() + str.slice(i + 2);
-
-  //   console.log(camelizedLetter, newStr, accStr);
-  // }
-
-  //}
-  startArr = str.split("_");
-  arr = startArr.map((item, index, array) => {
-    return item[0].toUpperCase() + item.slice(1, item.length);
-  });
-  str = arr.join("");
-  return str;
+  return str
+    .split("_")
+    .map((word, index) =>
+      word == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join("");
 }
 console.log(camelize("my_text_camel_case"));
