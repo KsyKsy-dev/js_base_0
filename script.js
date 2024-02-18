@@ -1169,12 +1169,18 @@
 // let arr = [2, 5, 6, 8];
 // let calc = arr.reduce((sum, accomulator) => sum + accomulator, 0);
 // console.log(calc);
-function camelize(str) {
-  return str
-    .split("_")
-    .map((word, index) =>
-      word == 0 ? word : word[0].toUpperCase() + word.slice(1)
-    )
-    .join("");
-}
-console.log(camelize("my_text_camel_case"));
+// function camelize(str) {
+//   return str
+//     .split("_")
+//     .map((word, index) =>
+//       word == 0 ? word : word[0].toUpperCase() + word.slice(1)
+//     )
+//     .join("");
+// }
+// console.log(camelize("my_text_camel_case"));
+// let arr = [2, 3, 6, 8];
+
+// function filtered(arr, a, b) {
+//   return arr.filter((item) => item < a || item > b);
+// }
+// console.log(filtered(arr, 3, 7), arr);
