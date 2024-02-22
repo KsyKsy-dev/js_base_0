@@ -1184,3 +1184,20 @@
 //   return arr.filter((item) => item < a || item > b);
 // }
 // console.log(filtered(arr, 3, 7), arr);
+
+let arr = [2, 3, 1, 6, 8, 0];
+function filteredInPlace(arr, a, b) {
+  for (let i = 0; i < arr.length; i++) {
+    //remove  value
+    //console.log(arr[i], i, "check ");
+    let val = arr[i];
+    if (b > val && a < val) {
+      console.log(arr[i], i);
+      arr.splice(i, 1);
+      //i--;
+      console.log("i", i);
+    }
+  }
+}
+filteredInPlace(arr, 2, 7);
+console.log(arr);
