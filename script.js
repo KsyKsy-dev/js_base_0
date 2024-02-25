@@ -1201,3 +1201,10 @@
 // }
 // filteredInPlace(arr, 2, 7);
 // console.log(arr);
+// let arr = [6, 7, 3, 0, 111];
+
+// function sortArr(arr) {
+//   return arr.sort((a, b) => a - b);
+// }
+
+// console.log(sortArr(arr));
