@@ -1208,3 +1208,23 @@
 // }
 
 // console.log(sortArr(arr));
+
+// function copySorted(arr) {
+//   return arr.slice().sort();
+// }
+// let arr = ["Bouble", "Home", "home", "lock", "anz"];
+// let sorted = copySorted(arr);
+// console.log(arr);
+// console.log(sorted);
+
+// function copySorted(arr) {
+//   return arr.slice().sort();
+// }
+
+// let arr1 = ["HTML", "JavaScript", "CSS"];
+
+// let sorted1 = copySorted(arr1);
+
+// console.log(sorted1);
+// console.log(arr1);
+console.log("2 + 3".split(" "));
